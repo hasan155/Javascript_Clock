@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="js/jquery.js"></script>	
+		<title>I love my Bangladesh</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<section class="maincontent">
+			<header class="header">
+				<h1><script>document.write("Hi, I am Hasan Mahmud");</script></h1>
+			</header>
+			<content class="content">
+			<form name="frm">
+			<table>
+				<caption>calculator</caption>
+				<tr>
+					<td>Input Box:</td>
+					<td><input type="text" name="getvalue" /></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Absolute" onClick="calculate(1)"</td>
+					<td><input type="button" value="Round" onClick="calculate(2)"</td>
+				</tr>	
+				<tr>
+					<td><input type="button" value="Sine" onClick="calculate(3)"</td>
+					<td><input type="button" value="Cosine" onClick="calculate(4)"</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Tengent" onClick="calculate(5)"</td>
+					<td><input type="button" value="Log" onClick="calculate(6)"</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Floor" onClick="calculate(7)" </td>
+					<td><input type="button" value="Ceil" onClick="calculate(8)" </td>
+				</tr>	
+				<tr>
+					<td><input type="button" value="Square Root" onClick="calculate(9)"</td>
+					<td><input type="button" value="Random" onClick="calculate(10)"</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Mix" onClick="calculate(11)"</td>
+					<td><input type="button" value="Min" onClick="calculate(12)"</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="E" onClick="calculate(11)"</td>
+					<td><input type="button" value="Pie" onClick="calculate(12)"</td>
+				</tr>	
+				<tr>
+					<td>Result Box:</td>
+					<td><input type="text" name="showresult" /></td>
+				</tr>				
+			</table>
+			</form>
+			<script type="text/javascript">
+ 
+				function calculate(process){
+					with(document.frm)
+					switch(process){
+						case 1:
+						showresult.value = Math.abs(getvalue.value);
+						break;
+						
+						case 2:
+						showresult.value = Math.round(getvalue.value);
+						break;
+						
+						case 3 :
+						showresult.value = Math.sin(convDegree(getvalue.value));
+						break;
+						
+						case 4:
+						showresult.value = Math.cos(convDegree(getvalue.value));
+						break;	
+						
+						case 5:
+						showresult.value = Math.tan(convDegree(getvalue.value));
+						break;	
+						
+						case 6:
+						showresult.value = Math.log(getvalue.value);
+						break;	
+
+						case 7:
+						showresult.value = Math.floor(getvalue.value);
+						break;
+						
+						case 8:
+						showresult.value = Math.ceil(getvalue.value);
+						break;
+						
+						case 9:
+						showresult.value = Math.sqrt(getvalue.value);
+						break;	
+
+						case 10:
+						showresult.value = Math.random();
+						break;
+						
+						case 11:
+						alert(Math.max(getvalue.value, prompt('Enter number','0'))+'is greaterthen the number');
+						break;
+						
+						case 12:
+						alert(Math.min(getvalue.value, prompt('Enter number','0'))+'is smaller then number');
+						break;
+
+						case 13:
+						showresult.value = Math.E();
+						break;
+
+						case 14:
+						showresult.value = Math.PI();
+						break;						
+					}
+				}
+				function convDegree(x){
+					return x*22/7/180;
+				}
+			
+			</script>
+			</content>
+			<footer class="footer">
+				<h1><script>document.write("I live in Bangladesh ");</script></h1>
+			</footer>		
+		</section>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
